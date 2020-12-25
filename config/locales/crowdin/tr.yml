@@ -1199,7 +1199,7 @@ tr:
       forums: "Topluluk forumu"
       newsletter: "Güvenlik uyarıları / haber bülteni"
   image_conversion:
-    imagemagick: 'Imagemagick'
+    imagemagick: 'Resim büyüsü'
   journals:
     changes_retracted: "Değişiklikler geri çekildi."
   links:
