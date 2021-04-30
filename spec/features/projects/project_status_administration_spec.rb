@@ -75,16 +75,16 @@ describe 'Projects status administration', type: :feature, js: true do
     # Check that the status has been set correctly
     visit settings_generic_project_path(Project.last)
 
-    expect(page).to have_selector('[data-field-name="status"] .ng-value', text: 'On track')
+    expect(page).to have_selector('[data-field-name="status"] .ng-value', text: 'ON TRACK')
 
     edit_status_description.expect_value 'Everything is fine at the start'
 
-    select_autocomplete page.find('[data-field-name="status"]'), query: 'Off track'
+    select_autocomplete page.find('[data-field-name="status"]'), query: 'OFF TRACK'
     edit_status_description.set_markdown 'Oh no'
 
     click_button 'Save'
 
-    expect(page).to have_selector('[data-field-name="status"] .ng-value', text: 'Off track')
+    expect(page).to have_selector('[data-field-name="status"] .ng-value', text: 'OFF TRACK')
 
     edit_status_description.expect_value 'Oh no'
   end
