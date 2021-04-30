@@ -14,7 +14,7 @@ export interface IOPFormlyFieldSettings extends FormlyFieldConfig {
 }
 
 type OPInputType = 'formattableInput'|'selectInput'|'textInput'|'integerInput'|
-  'booleanInput'|'dateInput';
+  'booleanInput'|'dateInput'|'selectProjectStatusInput';
 
 export interface IOPDynamicInputTypeSettings {
   config:IOPFormlyFieldSettings,
